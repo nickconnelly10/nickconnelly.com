@@ -39,15 +39,15 @@ export default function ContactPage() {
                 </a>
                 
                 <a 
-                  href="https://x.com/nicklutk"
+                  href="https://nicholasconnelly.substack.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors duration-200 group"
+                  className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors duration-200 group"
                 >
-                  <svg className="w-5 h-5 text-gray-800 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  <svg className="w-5 h-5 text-orange-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
                   </svg>
-                  <span className="text-gray-800 group-hover:text-gray-600 transition-colors duration-200 font-medium">Twitter</span>
+                  <span className="text-gray-800 group-hover:text-orange-600 transition-colors duration-200 font-medium">Substack</span>
                 </a>
                 
                 <a 
@@ -74,18 +74,6 @@ export default function ContactPage() {
                   <span className="text-gray-800 group-hover:text-pink-600 transition-colors duration-200 font-medium">Instagram</span>
                 </a>
               </div>
-              
-              <a 
-                href="https://nicholasconnelly.substack.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center p-4 bg-orange-50 hover:bg-orange-100 rounded-lg transition-colors duration-200 group"
-              >
-                <svg className="w-5 h-5 text-orange-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-                </svg>
-                <span className="text-gray-800 group-hover:text-orange-600 transition-colors duration-200 font-medium">Substack</span>
-              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['nickconnelly.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'nickconnelly.com',
+      },
+    ],
     unoptimized: true,
     qualities: [75, 85, 100] // Fix the Next.js 16 warning
   },
