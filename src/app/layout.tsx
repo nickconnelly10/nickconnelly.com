@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Nicholas Connelly",
@@ -56,6 +57,7 @@ export default function RootLayout({
         <NavBar/>
         {children}
         <Footer/>
+        <Analytics/>
       </body>
     </html>
   );
