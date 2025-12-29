@@ -1,15 +1,15 @@
-# 🏠 Nicholas Connelly Box
+# Nicholas Connelly Personal website
 
 A modern personal website built with Next.js 16, React 19, and Tailwind CSS.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 16.1.1 (App Router)
 - **Frontend**: React 19, TypeScript
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -24,7 +24,7 @@ npm run build
 
 Visit `http://localhost:3000` to view the site.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -34,7 +34,7 @@ src/
 public/               # Static assets
 ```
 
-## 🚀 Deployment
+## Deployment
 
 Deploy to Vercel:
 ```bash
@@ -43,7 +43,7 @@ npx vercel --prod
 
 Domain: `nickconnelly.com`
 
-## 🔗 Related Projects
+## Related Projects
 
 - **Health Dashboard**: `https://health.nickconnelly.com`
 
