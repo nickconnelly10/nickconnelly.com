@@ -46,8 +46,7 @@ Domain: `nickconnelly.com`
 ## 🔗 Related Projects
 
 - **Health Dashboard**: `https://health.nickconnelly.com`
-- **DeFi Dashboard**: `https://defi.nickconnelly.com`
 
 ---
 
-*Built on BITCOIN • Secure • Transparent • Professional • Strava Club*
+ Secure • Transparent • Professional
