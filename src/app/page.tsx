@@ -1,31 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function Home() {
-  const [showScrollArrow, setShowScrollArrow] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setShowScrollArrow(scrollTop === 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className='min-h-screen'>
       {/* Hero Section */}
-      <div className='relative min-h-screen overflow-hidden'>
+      <div className='relative min-h-screen w-full overflow-hidden'>
         <Image
           src='/images/nick/nicholas-personal-2.jpeg'
           alt='Nicholas Connelly'
@@ -35,8 +15,7 @@ export default function Home() {
           sizes='100vw'
           quality={85}
         />
-        
-        <div className='absolute inset-0 bg-black bg-opacity-40'></div>
+        <div className='absolute inset-0 bg-black/40' aria-hidden />
         
         <div className='flex flex-col justify-center min-h-screen relative w-full pt-20'>
           <div className='relative z-10 max-w-4xl mx-auto container-padding w-full'>
@@ -48,29 +27,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-        
-        {showScrollArrow && (
-          <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10'>
-            <button
-              onClick={() => scrollToSection('about')}
-              className='text-white hover:text-gray-200 transition-colors duration-200'
-            >
-              <svg 
-                className='w-6 h-6' 
-                fill='none' 
-                stroke='currentColor' 
-                viewBox='0 0 24 24'
-              >
-                <path 
-                  strokeLinecap='round' 
-                  strokeLinejoin='round' 
-                  strokeWidth={2} 
-                  d='M19 14l-7 7m0 0l-7-7m7 7V3' 
-                />
-              </svg>
-            </button>
-          </div>
-        )}
       </div>
 
       {/* About Section */}

@@ -190,18 +190,26 @@ export default function NestPage() {
               <p className="text-sm text-gray-500 mt-4 text-center">
                 Join our community on social media for updates, photos, and running activities!
               </p>
-              
-              {/* Strava Activity Feed */}
+
+              {/* Strava: embed often blocked by Strava; link to club instead */}
               <div className="mt-8 flex justify-center">
-                <iframe 
-                  allowTransparency={true} 
-                  frameBorder="0" 
-                  height="160" 
-                  scrolling="no" 
-                  src="https://www.strava.com/clubs/1284036/latest-rides/d1fef7f441c5fc4894f0308226fa46da1465ff16?show_rides=false" 
-                  width="300"
-                  className="rounded-lg shadow-sm"
-                />
+                <a
+                  href="https://www.strava.com/clubs/nestrunclub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-6 py-4 rounded-lg border border-gray-200 bg-gray-50 hover:bg-orange-50 hover:border-orange-200 transition-colors duration-200 group"
+                >
+                  <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.599h4.172L10.463 0l-7.13 14.172h4.169" />
+                  </svg>
+                  <div className="text-left">
+                    <p className="font-medium text-gray-800 group-hover:text-orange-700">View club stats on Strava</p>
+                    <p className="text-sm text-gray-500">Weekly activity & leaderboard</p>
+                  </div>
+                  <svg className="w-5 h-5 text-gray-400 group-hover:text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
