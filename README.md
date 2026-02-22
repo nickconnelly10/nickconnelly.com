@@ -43,10 +43,3 @@ npx vercel --prod
 
 Domain: `nickconnelly.com`
 
-## Related Projects
-
-- **Health Dashboard**: `https://health.nickconnelly.com`
-
----
-
- Secure • Transparent • Professional
