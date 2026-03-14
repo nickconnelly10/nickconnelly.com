@@ -22,7 +22,7 @@ export default function ResumePage() {
               <h2 className="text-xl font-semibold text-gray-800">Nicholas Connelly - Resume</h2>
               <div className="flex space-x-3">
                 <a
-                  href="/resume/Nicholas%20Connelly%20Resume%203_2026.docx.pdf"
+                  href="/resume/Nicholas_Connelly_Resume.docx.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary text-sm"
@@ -33,7 +33,7 @@ export default function ResumePage() {
                   Open in New Tab
                 </a>
                 <a
-                  href="/resume/Nicholas%20Connelly%20Resume%203_2026.docx.pdf"
+                  href="/resume/Nicholas_Connelly_Resume.docx.pdf"
                   download="Nicholas-Connelly-Resume-2026.pdf"
                   className="btn-secondary text-sm"
                 >
@@ -48,7 +48,7 @@ export default function ResumePage() {
           <div className="p-0">
             {!iframeError ? (
               <iframe
-                src="/resume/Nicholas%20Connelly%20Resume%203_2026.docx.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                src="/resume/Nicholas_Connelly_Resume.docx.pdf#toolbar=1&navpanes=1&scrollbar=1"
                 className="w-full h-screen border-0"
                 title="Nicholas Connelly Resume"
                 onError={() => setIframeError(true)}
@@ -74,7 +74,7 @@ export default function ResumePage() {
                   Your browser doesn't support inline PDF viewing. Please use the buttons above to open or download the resume.
                 </p>
                 <a
-                  href="/resume/Nicholas%20Connelly%20Resume%203_2026.docx.pdf"
+                  href="/resume/Nicholas_Connelly_Resume.docx.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
