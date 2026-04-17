@@ -40,15 +40,15 @@ export default function Home() {
           
           <div className='prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in'>
             <p className='text-lg'>
-              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, financial independence, and the human body, I find purpose to always question whats around us.
+              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, finances, and the human body, I find purpose to always question whats around us.
             </p>
             
             <p className='text-lg'>
-              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I'm pursuing studies toward becoming a Doctor of Osteopathic Medicine (DO) in my desire to cure people from the chronic disease epidemic that has ravaged America.
+              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I'm pursuing studies toward becoming a certified Anesthesiology Assistant (caa).
             </p>
             
             <p className='text-lg'>
-              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. My commitment to health and community led me to create NEST Run Club which has led to a massive new cultural shift at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
+              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. My commitment to health and community led me to create NEST Run Club which has led to a massive growth in students fitness and wellbeing at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
             </p>
           </div>
         </div>
