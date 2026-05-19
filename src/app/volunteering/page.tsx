@@ -15,7 +15,7 @@ export default function VolunteeringPage() {
           <div className="text-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">About</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              My volunteering and community development journey reflects a commitment to health, service, and growth. From serving on a medical mission in Peru to mentoring local students and organizing service events through NEST Run Club, I've sought to combine meaningful service with long-term impact.
+              My volunteering and community development journey reflects a commitment to health, service, and growth. From serving on a medical mission in Peru to mentoring local students and organizing service events through NEST Run Club, I&apos;ve sought to combine meaningful service with long-term impact.
             </p>
           </div>
         </div>
@@ -27,19 +27,19 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">UGA MedLife Peru Mission Trip (2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Assisted in building community greenhouses, planting crops, and participating in local celebrations. Shadowed dentists, doctors, and nurses while taking vitals, supporting patient care, and educating the community on wellness.
+                Mobile clinics in Cusco villages—assisted dentists and physicians, took vitals, and taught preventive health and hygiene.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">St. Mary's Hospital Volunteering (2025–present)</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">St. Mary&apos;s Hospital Volunteering (2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Supporting patient care through central supply and hospital service.
+                Central supply volunteer—restocked medical supplies across hospital floors to support patient care behind the scenes.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Caretaking (2025–present)</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Personal Care Assistant (2024–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Providing direct patient care for a physically disabled individual, including assistance with mobility, personal hygiene, meal preparation, and daily health needs. This experience has strengthened my compassion, attention to detail, and dedication to supporting quality of life through hands-on care.
+                Daily care for a college student with cerebral palsy—mobility, hygiene, meals, transportation, and helping him participate in campus life.
               </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
@@ -65,6 +65,37 @@ export default function VolunteeringPage() {
           </div>
         </div>
 
+        {/* Youth & Camp Service */}
+        <div className="card mb-16 animate-slide-up">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-8">Youth & Camp Service</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Lifeguard (2020–2022)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Pool lifeguard at a nieghborhood pool. As my first job at 15 years old, I learned responsibility, safety, and supervision. Learned the basics of first aid and CRP, while being adaptive for emergencies.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Kesem UGA (2026–present)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Support for children whose parents have cancer—outings, birthday letters, fundraising ($1,000+), and counseling 17-year-olds at week-long camp.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Cannon Church Summer Camp (2023–2025)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Rec counselor for three summers—planned outdoor activities and led groups of 200+ children through games, competitions, and daily programming.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Frais Church Volunteering (2024)</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Church setup and teardown, plus children&apos;s ministry during services—Bible stories and activities for younger kids.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Local Community Engagement */}
         <div className="card mb-16 animate-slide-up">
           <h2 className="text-2xl font-semibold text-gray-800 mb-8">Local Community Engagement</h2>
@@ -72,13 +103,13 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">NEST Run Club (2024–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Co-founded and lead service events, including Athens Marathon volunteering and ongoing community wellness activities. NEST has monthly community service events to contribute to local initiatives that support education, nutrition, and community development.
+                Co-founded the club and lead monthly service—food drives, meal prep with local churches, Athens Marathon volunteering, and community wellness events.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–2025)</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Dawg Day of Service & The Table Backpack Project (2023–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                I volunteer locally at UGA and oncampus ministry events to serve food and provide books for children and homeless in need in the Athens community.
+                Semester service days—book donations for schools, children&apos;s science demos, cemetery restoration, and campus ministry outreach serving food and supplies in Athens.
               </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
@@ -111,20 +142,11 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Clarke County Mentorship Program (2025–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Mentor to a local high school student, providing guidance and support in academics and personal growth.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Leadership Through NEST Run Club</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Creating an inclusive community that emphasizes health, consistency, and social connection, with regular volunteering tied into wellness.
+                Mentor for a local high school student—academic guidance, accountability, and encouragement toward positive outlets like athletics.
               </p>
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   );

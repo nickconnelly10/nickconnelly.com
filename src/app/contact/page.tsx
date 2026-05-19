@@ -63,7 +63,7 @@ export default function ContactPage() {
                 </a>
                 
                 <a 
-                  href="https://instagram.com/nicholasconnelly"
+                  href="https://instagram.com/nickkconnelly"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-4 bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors duration-200 group"

@@ -44,7 +44,7 @@ const Footer = () => {
                 href="/contact"
                 className="block text-sm text-gray-300 hover:text-white transition-colors duration-200"
               >
-                Contact Me
+                Contact
               </a>
               <a 
                 href="https://www.linkedin.com/in/nicholas-connelly" 
