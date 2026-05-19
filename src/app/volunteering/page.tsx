@@ -27,7 +27,7 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">UGA MedLife Peru Mission Trip (2025)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Mobile clinics in Cusco villages—assisted dentists and physicians, took vitals, and taught preventive health and hygiene.
+                Mobile clinics in Cusco villages—assisted dentists and physicians, took vitals, and taught preventive health and hygiene. Assisted in building community greenhouses, planting crops, and participating in local celebrations.
               </p>
             </div>
             <div>
@@ -39,8 +39,7 @@ export default function VolunteeringPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Personal Care Assistant (2024–present)</h3>
               <p className="text-gray-600 leading-relaxed">
-                Daily care for a college student with cerebral palsy—mobility, hygiene, meals, transportation, and helping him participate in campus life.
-              </p>
+              Providing direct patient care for a physically disabled individual, including assistance with mobility, personal hygiene, meal preparation, and daily health needs. This experience has strengthened my compassion, attention to detail, and dedication to supporting quality of life through hands-on care.              </p>
             </div>
             <div className="mt-6 grid md:grid-cols-2 gap-6">
               <div className="aspect-video overflow-hidden rounded-lg">
