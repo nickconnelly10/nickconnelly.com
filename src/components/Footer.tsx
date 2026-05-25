@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <h3 className="text-lg font-medium text-white mb-4">Nicholas Connelly</h3>
@@ -98,19 +98,6 @@ const Footer = () => {
                 Volunteering & Community
               </a>
             </div>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="text-sm font-medium text-white mb-4 uppercase tracking-wide">Legal</h4>
-            <nav className="space-y-2">
-              <Link href="/privacy" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
-                Terms of Service
-              </Link>
-            </nav>
           </div>
         </div>
         

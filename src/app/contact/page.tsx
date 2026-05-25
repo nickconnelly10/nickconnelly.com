@@ -7,7 +7,7 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Whether it's health, finance, or anything else inbetween, I enjoy connecting with others who share a passion for growth.
+            Whether it's health, finance, or anything else inbetween, I enjoy connecting with others.
           </p>
         </div>
         
