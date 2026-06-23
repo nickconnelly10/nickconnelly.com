@@ -24,9 +24,6 @@ const Footer = () => {
               <Link href="/projects" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Projects
               </Link>
-              <Link href="/writing" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
-                Writing
-              </Link>
               <Link href="/resume" className="block text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 Resume
               </Link>

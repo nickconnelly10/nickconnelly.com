@@ -11,18 +11,17 @@ export default function Home() {
           alt='Nicholas Connelly'
           fill
           priority
-          className='object-cover object-center md:object-[center_45%] lg:object-[center_40%] xl:object-[center_35%]'
+          className='object-cover object-[center_25%] md:object-[center_30%] lg:object-[center_35%]'
           sizes='100vw'
           quality={85}
         />
-        <div className='absolute inset-0 bg-black/40' aria-hidden />
         
-        <div className='flex flex-col justify-center min-h-screen relative w-full pt-20'>
-          <div className='relative z-10 max-w-4xl mx-auto container-padding w-full'>
-            <h1 className='font-light text-white leading-tight mb-8 animate-fade-in'>
+        <div className='flex flex-col min-h-screen relative w-full pt-20'>
+          <div className='relative z-10 max-w-4xl mx-auto container-padding w-full mt-36 md:mt-44'>
+            <h1 className='font-light text-white leading-tight mb-8 animate-fade-in text-5xl md:text-[4.25rem]'>
               Nicholas Connelly
             </h1>
-            <p className='text-xl text-gray-200 leading-relaxed max-w-2xl animate-slide-up'>
+            <p className='text-2xl text-white leading-relaxed max-w-2xl animate-slide-up'>
               Exploring health, finance, and the nature of things
             </p>
           </div>
@@ -40,7 +39,7 @@ export default function Home() {
           
           <div className='prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in'>
             <p className='text-lg'>
-              I'm Nicholas Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, finances, and the human body, I find purpose to always question whats around us.
+              I'm Nick Connelly, a third-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it's helping others navigate wellness, finances, and the human body, I find purpose to always question whats around us.
             </p>
             
             <p className='text-lg'>
@@ -161,84 +160,6 @@ export default function Home() {
                 className='text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium'
               >
                 Learn More →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Resume, Connect & Substack Section */}
-      <section className='section-padding bg-gray-50'>
-        <div className='max-w-6xl mx-auto container-padding'>
-          <div className='grid md:grid-cols-3 gap-8 animate-slide-up'>
-            {/* Substack */}
-            <div className='card text-center'>
-              <div className='mb-6'>
-                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='currentColor' viewBox='0 0 24 24'>
-                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
-                </svg>
-                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Read My Substack</h3>
-                <p className='text-gray-600 mb-6'>
-                  Exploring health, finance, and the nature of things through writing and reflection.
-                </p>
-              </div>
-              
-              <a
-                href='https://nicholasconnelly.substack.com'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='btn-primary'
-              >
-                <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
-                  <path d='M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z'/>
-                </svg>
-                Read on Substack
-              </a>
-            </div>
-
-            {/* Resume */}
-            <div className='card text-center'>
-              <div className='mb-6'>
-                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1} d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' />
-                </svg>
-                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Resume</h3>
-                <p className='text-gray-600 mb-6'>
-                  View my professional background and experience.
-                </p>
-              </div>
-              
-              <a
-                href='/resume'
-                className='btn-primary'
-              >
-                <svg className='w-4 h-4 mr-2' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' />
-                </svg>
-                View Resume
-              </a>
-            </div>
-
-            {/* Connect */}
-            <div className='card text-center'>
-              <div className='mb-6'>
-                <svg className='w-12 h-12 text-gray-600 mx-auto mb-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
-                </svg>
-                <h3 className='text-xl font-semibold text-gray-800 mb-3'>Connect</h3>
-                <p className='text-gray-600 mb-6'>
-                  Whether it's health, finance, or anything else inbetween, I enjoy connecting with others who share a passion for growth
-                </p>
-              </div>
-              
-              <a
-                href='/contact'
-                className='btn-primary'
-              >
-                <svg className='w-4 h-4 mr-2' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z' />
-                </svg>
-                Get In Touch
               </a>
             </div>
           </div>

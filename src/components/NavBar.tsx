@@ -44,12 +44,6 @@ const NavBar = () => {
             Projects
           </Link>
           <Link 
-            href="/writing" 
-            className="nav-link text-gray-600"
-          >
-            Writing
-          </Link>
-          <Link 
             href="/resume" 
             className="nav-link text-gray-600"
           >
@@ -111,13 +105,6 @@ const NavBar = () => {
               onClick={closeMobileMenu}
             >
               Projects
-            </Link>
-            <Link
-              href="/writing"
-              className="block px-3 py-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-md transition-colors duration-200"
-              onClick={closeMobileMenu}
-            >
-              Writing
             </Link>
             <Link
               href="/resume"
