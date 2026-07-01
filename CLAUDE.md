@@ -70,7 +70,7 @@ URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 
 ## Key external properties (linked, not in this repo)
 
-- [muscadine.io](https://muscadine.io) — DeFi project
+- [muscadine.xyz](https://muscadine.xyz) — DeFi project
 - [health.nickconnelly.com](https://health.nickconnelly.com) — Health & wellness
 - [nicholasconnelly.substack.com](https://nicholasconnelly.substack.com) — Newsletter
 - LinkedIn, contact flows as linked from footer/nav
