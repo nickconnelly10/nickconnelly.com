@@ -82,7 +82,7 @@ export default function Home() {
                 Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals navigate the digital economy.
               </p>
               <a
-                href='https://muscadine.io'
+                href='https://muscadine.xyz'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium'

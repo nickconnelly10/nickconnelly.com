@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-slide-up">
             {/* Muscadine - DeFi */}
             <a
-              href="https://muscadine.io"
+              href="https://muscadine.xyz"
               target="_blank"
               rel="noopener noreferrer"
               className="block"

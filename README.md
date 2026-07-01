@@ -2,9 +2,11 @@
 
 A modern personal website built with Next.js 16, React 19, and Tailwind CSS.
 
+**Live:** [nickconnelly.com](https://nickconnelly.com)
+
 ## Tech Stack
 
-- **Framework**: Next.js 16.1.1 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Frontend**: React 19, TypeScript
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
@@ -12,17 +14,12 @@ A modern personal website built with Next.js 16, React 19, and Tailwind CSS.
 ## Quick Start
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
-npm run dev
-
-# Build for production
+npm run dev      # http://localhost:3000
 npm run build
 ```
 
-Visit `http://localhost:3000` to view the site.
+No environment variables required.
 
 ## Project Structure
 
@@ -36,10 +33,6 @@ public/               # Static assets
 
 ## Deployment
 
-Deploy to Vercel:
-```bash
-npx vercel --prod
-```
+Deploy to Vercel. Domain: `nickconnelly.com`
 
-Domain: `nickconnelly.com`
-
+See `CLAUDE.md` for agent/developer conventions.
