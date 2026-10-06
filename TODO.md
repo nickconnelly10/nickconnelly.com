@@ -5,3 +5,5 @@ add and update for this semester:
 - planting
 - volunteering at the church (welsey)
 - NEST
+
+- update for AA information / program for when the time comes
