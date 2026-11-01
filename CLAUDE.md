@@ -25,7 +25,7 @@ npm run build    # production build
 ```
 src/
 ├── app/                    # App Router routes (one page.tsx per route)
-│   ├── layout.tsx          # Root layout: NavBar, Analytics, fonts, metadata
+│   ├── layout.tsx          # Root layout: NavBar, fonts, metadata
 │   ├── globals.css         # Tailwind v4 @theme, utility classes
 │   ├── page.tsx            # Home (RSC, hero + about + projects)
 │   ├── contact/
@@ -65,7 +65,6 @@ URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 - **Global chrome**: `NavBar` only (footer removed).
 - **Metadata**: `metadataBase` + shared OG image in layout; per-page metadata via `src/lib/metadata.ts`.
 - **Images**: `next/image` with optimized delivery; large originals in `public/`.
-- **Analytics**: `@vercel/analytics` and `@vercel/speed-insights` in root layout.
 
 ## Conventions for changes
 
