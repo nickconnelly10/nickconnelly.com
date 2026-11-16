@@ -7,3 +7,5 @@ add and update for this semester:
 - NEST
 
 - update for AA information / program for when the time comes
+
+-remove contact info besides email. 
