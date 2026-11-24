@@ -68,7 +68,7 @@ export const projects = [
   {
     title: "Muscadine",
     description:
-      "Muscadine focuses on Bitcoin, crypto self-custody, and DeFi solutions.",
+      "Muscadine focuses on Bitcoin, crypto self-custody, and DeFi.",
     imageSrc: "/images/muscadine/Bitcoin.svg.png",
     imageAlt: "Muscadine Platform",
     href: "https://muscadine.xyz",

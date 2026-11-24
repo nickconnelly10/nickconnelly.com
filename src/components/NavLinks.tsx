@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 const links = [
   { href: "/", label: "Home" },
@@ -30,6 +31,43 @@ type NavLinksProps = {
 
 export default function NavLinks({ variant }: NavLinksProps) {
   const pathname = normalizePath(usePathname());
+  // The mobile menu lives in the root layout, so it is never re-mounted on navigation.
+  // Close it on a link tap, an outside tap, or Escape, or it stays open over the next page.
+  const menuRef = useRef<HTMLDetailsElement>(null);
+  const closeMenu = () => {
+    if (menuRef.current) menuRef.current.open = false;
+  };
+
+  useEffect(() => {
+    if (variant !== "mobile") return;
+    const onPointerDown = (event: PointerEvent) => {
+      const menu = menuRef.current;
+      if (menu?.open && !menu.contains(event.target as Node)) menu.open = false;
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      const menu = menuRef.current;
+      if (event.key !== "Escape" || !menu?.open) return;
+      const focusWasInside = menu.contains(document.activeElement);
+      menu.open = false;
+      // Don't leave focus on a link that is now hidden.
+      if (focusWasInside) menu.querySelector("summary")?.focus();
+    };
+    // Keyboard users tabbing past the last link should not leave the menu open over the page.
+    const onFocusOut = (event: FocusEvent) => {
+      const menu = menuRef.current;
+      const next = event.relatedTarget as Node | null;
+      if (menu?.open && next && !menu.contains(next)) menu.open = false;
+    };
+    const menu = menuRef.current;
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    menu?.addEventListener("focusout", onFocusOut);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+      menu?.removeEventListener("focusout", onFocusOut);
+    };
+  }, [variant]);
 
   if (variant === "desktop") {
     return (
@@ -49,7 +87,7 @@ export default function NavLinks({ variant }: NavLinksProps) {
   }
 
   return (
-    <details className="md:hidden relative group">
+    <details ref={menuRef} className="md:hidden relative group">
       <summary className="list-none p-2 rounded-md text-gray-600 hover:text-gray-800 hover:bg-gray-100 transition-colors duration-200 cursor-pointer [&::-webkit-details-marker]:hidden">
         <span className="sr-only">Open menu</span>
         <svg
@@ -84,6 +122,7 @@ export default function NavLinks({ variant }: NavLinksProps) {
                   : "text-gray-600 hover:text-gray-800 hover:bg-gray-100"
               }`}
               aria-current={isActive(pathname, link.href) ? "page" : undefined}
+              onClick={closeMenu}
             >
               {link.label}
             </Link>

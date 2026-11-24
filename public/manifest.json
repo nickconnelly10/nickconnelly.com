@@ -15,7 +15,7 @@
       "purpose": "any"
     }
   ],
-  "categories": ["portfolio", "personal", "business"],
+  "categories": ["portfolio", "personal"],
   "lang": "en",
   "dir": "ltr",
   "scope": "/",

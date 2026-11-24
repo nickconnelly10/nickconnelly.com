@@ -39,7 +39,7 @@ export default function HealthPage() {
                 <video
                   src="/videos/health/journey/journey-activity.mp4"
                   poster="/videos/health/journey/journey-activity-poster.jpg"
-                  aria-label="Running toward the finish line of a road race"
+                  aria-label="A runner approaching the finish line of a road race"
                   controls
                   playsInline
                   preload="none"
@@ -93,7 +93,7 @@ export default function HealthPage() {
               <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg border border-gray-200">
                 <Image
                   src="/images/health/journey/mind/mind-photo-1.jpg"
-                  alt="Potted plants on a windowsill"
+                  alt="Potted plants on a kitchen counter"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -151,10 +151,10 @@ export default function HealthPage() {
                 means being able to endure what life gives you.
               </p>
               <p className="text-gray-600 text-sm leading-relaxed mt-4">
-                It was in college that I started developing my relationship with God, for He gives
+                It was especially in college that I started developing my relationship with God, for He gives
                 guidance, comfort, and strength. Prayer is key to that relationship. God does
                 spectacular miracles, and I have witnessed many firsthand. I keep praying to grow my
-                relationship with the King of Kings.
+                relationship with the King of all Kings.
               </p>
             </div>
           </section>

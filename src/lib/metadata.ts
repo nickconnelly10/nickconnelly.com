@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
 const OG_IMAGE = {
-  url: "/images/nick/nicholas-personal-2.jpeg",
+  // 1200x630 share card cropped from the home hero photo, rotation baked in (the original
+  // is 4.2 MB with an EXIF rotation that some link-preview scrapers ignore).
+  url: "/images/nick/og-image.jpg",
+  width: 1200,
+  height: 630,
   alt: "Nicholas Connelly",
 };
 
