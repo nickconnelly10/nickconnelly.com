@@ -25,24 +25,25 @@ export default function HealthPage() {
             <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Body</h2>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="relative w-full h-64 overflow-hidden rounded-lg border border-gray-200">
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg border border-gray-200">
                 <Image
                   src="/images/health/journey/body/farmersmarket.jpeg"
-                  alt="Farmers market produce"
+                  alt="Farmers market table of carrots, radishes and other fresh vegetables"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
-                  priority
+                  loading="eager"
                 />
               </div>
-              <div className="relative">
+              <div>
                 <video
                   src="/videos/health/journey/journey-activity.mp4"
                   poster="/videos/health/journey/journey-activity-poster.jpg"
+                  aria-label="Running toward the finish line of a road race"
                   controls
                   playsInline
                   preload="none"
-                  className="w-full h-64 object-cover rounded-lg border border-gray-200"
+                  className="w-full aspect-[4/5] object-cover rounded-lg border border-gray-200"
                 >
                   Your browser does not support the video tag.
                 </video>
@@ -53,7 +54,7 @@ export default function HealthPage() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Nutrition</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  I follow a holistic whole food diet, similar to how our ancestors ate.
+                  I follow a holistic, whole-food diet, similar to how our ancestors ate.
                 </p>
               </div>
               <div>
@@ -69,8 +70,8 @@ export default function HealthPage() {
               <div className="md:col-span-2">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Hobbies in Movement</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  I find that during the day I must be active too, that includes walking, playing
-                  sports and biking instead of driving.
+                  I find that I must be active during the day too: walking, playing sports, and
+                  biking instead of driving.
                 </p>
               </div>
             </div>
@@ -80,19 +81,19 @@ export default function HealthPage() {
             <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Mind</h2>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="relative w-full h-64 overflow-hidden rounded-lg border border-gray-200">
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg border border-gray-200">
                 <Image
                   src="/images/health/journey/mind/mind-photo-2.jpg"
-                  alt="Reading and learning"
+                  alt="A Bible and an open notebook on a desk"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-full h-64 overflow-hidden rounded-lg border border-gray-200">
+              <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg border border-gray-200">
                 <Image
                   src="/images/health/journey/mind/mind-photo-1.jpg"
-                  alt="Plants and gardening"
+                  alt="Potted plants on a windowsill"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -104,22 +105,21 @@ export default function HealthPage() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Reading & Learning</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  I&apos;m passionate about reading to truly understand the nature of things, and
-                  gain knowledge from these texts, whether they are two thousand years old or from
-                  the past year, they all have something to learn from. I am passionate to read
-                  about the stoics, and how they lived their life, and also the religious text of
-                  the Bible. I am also into reading self-help books and learning more about health
-                  and science. Books have been instrumental in shaping my understanding of
+                  I&apos;m passionate about reading to truly understand the nature of things and to
+                  gain knowledge from these texts. Whether they are two thousand years old or from
+                  the past year, they all have something to teach. I love reading about the Stoics
+                  and how they lived their lives, and reading the Bible. I am also into self-help
+                  books and learning more about health and science. Books have been instrumental in shaping my understanding of
                   what&apos;s around me, and what&apos;s in me.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Plants & Gardening</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Caring for my garden, from peach trees and blackberry bushes to figs, and even a
+                  Caring for my garden — from peach trees and blackberry bushes to figs, and even a
                   few indoor plants — has become one of my favorite ways to see nature and
-                  experience the world around us. Tending to them allows you to see their growth
-                  over a long term satisfaction.
+                  experience the world around me. Tending to them over the long term and watching
+                  them grow is deeply satisfying.
                 </p>
               </div>
             </div>
@@ -129,12 +129,12 @@ export default function HealthPage() {
             <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center">Spirit</h2>
 
             <div className="mb-8">
-              <div className="relative max-w-md mx-auto w-full h-64 overflow-hidden rounded-lg border border-gray-200">
+              <div className="relative max-w-sm mx-auto w-full aspect-[3/4] overflow-hidden rounded-lg border border-gray-200">
                 <Image
                   src="/images/health/journey/spirit/mural-jordan-jesus.jpg"
-                  alt="Faith and connection with God"
+                  alt="Icon of Jesus entering Jerusalem on a donkey"
                   fill
-                  sizes="(max-width: 768px) 100vw, 448px"
+                  sizes="(max-width: 768px) 100vw, 384px"
                   className="object-cover"
                 />
               </div>
@@ -147,14 +147,14 @@ export default function HealthPage() {
               <p className="text-gray-600 text-sm leading-relaxed">
                 Faith has been both a source of strength and a constant challenge, requiring me to
                 continually seek, question, and grow in my relationship with God. The spirit is
-                what controls the mind, which in turn controls the body, having a strong foundation
+                what controls the mind, which in turn controls the body. Having a strong foundation
                 means being able to endure what life gives you.
               </p>
               <p className="text-gray-600 text-sm leading-relaxed mt-4">
-                Especially in college is when I started developing my relationship with God, for he
-                gives guidance, comfort and strength. Prayer is an aspect that is key in the
-                relationship. God does spectacular miracles, and I firsthand witnessed many, and I
-                continue to pray to continue my relationship with the King of all Kings.
+                It was in college that I started developing my relationship with God, for He gives
+                guidance, comfort, and strength. Prayer is key to that relationship. God does
+                spectacular miracles, and I have witnessed many firsthand. I keep praying to grow my
+                relationship with the King of Kings.
               </p>
             </div>
           </section>

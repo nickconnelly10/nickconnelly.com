@@ -43,7 +43,7 @@ src/
 └── lib/
     └── metadata.ts         # Per-page Open Graph / Twitter helper
 
-public/                     # Static assets (images, favicon, manifest, resume PDF)
+public/                     # Static assets (images, videos/, favicon, manifest, resume PDF)
 next.config.mjs             # trailingSlash: true, image optimization, security headers
 ```
 
@@ -66,7 +66,8 @@ URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 - **Server Components by default**; `'use client'` only for `NavBar` (pathname, mobile menu).
 - **Global chrome**: `NavBar` only (footer removed).
 - **Metadata**: `metadataBase` + shared OG image in layout; per-page metadata via `src/lib/metadata.ts`.
-- **Images**: `next/image` with optimized delivery; large originals in `public/`.
+- **Images**: `next/image` with optimized delivery (AVIF/WebP); large originals in `public/`. Next 16 deprecates `priority`: use `preload` only on a page's hero (LCP) image, `loading="eager"` for other above-the-fold images, and the default lazy loading elsewhere. Give every image alt text that describes the picture.
+- **Video**: encode H.264 with `-movflags +faststart` at about the displayed width (the /health clip is 480 px, ~1.2 MB), no audio track unless needed, with `poster`, `preload="none"`, `controls`, `playsInline` and an `aria-label`.
 
 ## Conventions for changes
 

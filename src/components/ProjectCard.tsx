@@ -68,7 +68,7 @@ export const projects = [
   {
     title: "Muscadine",
     description:
-      "Muscadine focuses on Bitcoin, crypto self-custody and DeFi solutions.",
+      "Muscadine focuses on Bitcoin, crypto self-custody, and DeFi solutions.",
     imageSrc: "/images/muscadine/Bitcoin.svg.png",
     imageAlt: "Muscadine Platform",
     href: "https://muscadine.xyz",
@@ -80,7 +80,7 @@ export const projects = [
     description:
       "My personal journey into body, mind, and spirit — nutrition, movement, learning, and faith.",
     imageSrc: "/images/health/health-wellness-platform.jpeg",
-    imageAlt: "Health",
+    imageAlt: "Runners with finisher medals after a race",
     href: "/health",
     cta: "Learn More →",
   },

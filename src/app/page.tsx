@@ -17,7 +17,7 @@ export default function Home() {
           src="/images/nick/nicholas-personal-2.jpeg"
           alt="Nicholas Connelly"
           fill
-          priority
+          preload
           className="object-cover object-[center_25%] md:object-[center_30%] lg:object-[center_35%]"
           sizes="100vw"
         />
