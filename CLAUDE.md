@@ -7,7 +7,7 @@ Personal portfolio site for **Nicholas Connelly** ([nickconnelly.com](https://ni
 | Item | Value |
 |------|--------|
 | Version | See `package.json` |
-| Node | `24.x` (see `.nvmrc` and `engines`) |
+| Node | `26.x` (see `.nvmrc` and `engines`) |
 | Package manager | npm (`package-lock.json`) |
 | Framework | Next.js 16 App Router |
 | UI | React 19, Tailwind CSS v4, Inter via `next/font` |
@@ -29,6 +29,7 @@ src/
 │   ├── globals.css         # Tailwind v4 @theme, utility classes
 │   ├── page.tsx            # Home (RSC, hero + about + projects)
 │   ├── contact/
+│   ├── health/             # Body / mind / spirit (images + video in public/)
 │   ├── nest/
 │   ├── projects/
 │   ├── resume/
@@ -54,6 +55,7 @@ next.config.mjs             # trailingSlash: true, image optimization, security 
 | `/projects` | Project cards |
 | `/resume` | Resume PDF open/download (iframe on desktop) |
 | `/contact` | Contact links |
+| `/health` | Health — personal body / mind / spirit page (linked from the Health project card) |
 | `/nest` | NEST Run Club |
 | `/volunteering` | Volunteering & community |
 
