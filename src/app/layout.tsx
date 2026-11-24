@@ -25,7 +25,9 @@ export const metadata: Metadata = {
     siteName: "Nicholas Connelly",
     images: [
       {
-        url: "/images/nick/nicholas-personal-2.jpeg",
+        url: "/images/nick/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "Nicholas Connelly",
       },
     ],
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/nick/nicholas-personal-2.jpeg"],
+    images: ["/images/nick/og-image.jpg"],
     creator: "@nicklutk",
   },
   keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Medical Student"],

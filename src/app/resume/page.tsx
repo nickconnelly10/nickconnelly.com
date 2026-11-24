@@ -48,7 +48,7 @@ export default function ResumePage() {
             />
           </div>
           <div className="lg:pointer-fine:hidden px-6 py-8 text-center text-gray-600 text-sm">
-            <p>Use the buttons above to open or download the PDF on mobile.</p>
+            <p>Use the buttons above to open or download the PDF.</p>
           </div>
         </div>
       </div>

@@ -45,13 +45,27 @@ export default function NavLinks({ variant }: NavLinksProps) {
       if (menu?.open && !menu.contains(event.target as Node)) menu.open = false;
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && menuRef.current) menuRef.current.open = false;
+      const menu = menuRef.current;
+      if (event.key !== "Escape" || !menu?.open) return;
+      const focusWasInside = menu.contains(document.activeElement);
+      menu.open = false;
+      // Don't leave focus on a link that is now hidden.
+      if (focusWasInside) menu.querySelector("summary")?.focus();
     };
+    // Keyboard users tabbing past the last link should not leave the menu open over the page.
+    const onFocusOut = (event: FocusEvent) => {
+      const menu = menuRef.current;
+      const next = event.relatedTarget as Node | null;
+      if (menu?.open && next && !menu.contains(next)) menu.open = false;
+    };
+    const menu = menuRef.current;
     document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
+    menu?.addEventListener("focusout", onFocusOut);
     return () => {
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
+      menu?.removeEventListener("focusout", onFocusOut);
     };
   }, [variant]);
 
