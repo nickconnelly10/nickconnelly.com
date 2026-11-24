@@ -17,7 +17,8 @@ export const metadata: Metadata = {
   },
   description: "Exploring health, finance, and the nature of things.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
   },
   manifest: "/manifest.json",
   openGraph: {

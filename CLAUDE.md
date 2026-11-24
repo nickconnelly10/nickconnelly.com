@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # CLAUDE.md — nickconnelly.com
 
 Personal portfolio site for **Nicholas Connelly** ([nickconnelly.com](https://nickconnelly.com)). Static marketing/content site, not a web app with auth or a database.
@@ -7,7 +9,7 @@ Personal portfolio site for **Nicholas Connelly** ([nickconnelly.com](https://ni
 | Item | Value |
 |------|--------|
 | Version | See `package.json` |
-| Node | `24.x` (see `.nvmrc` and `engines`) |
+| Node | `26.x` (see `.nvmrc` and `engines`) |
 | Package manager | npm (`package-lock.json`) |
 | Framework | Next.js 16 App Router |
 | UI | React 19, Tailwind CSS v4, Inter via `next/font` |
@@ -15,7 +17,7 @@ Personal portfolio site for **Nicholas Connelly** ([nickconnelly.com](https://ni
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
+npm run dev      # http://localhost:3000 (scripts set NEXT_TELEMETRY_DISABLED=1: no Next.js telemetry)
 npm run lint     # eslint src --max-warnings 0
 npm run build    # production build
 ```
@@ -29,6 +31,7 @@ src/
 │   ├── globals.css         # Tailwind v4 @theme, utility classes
 │   ├── page.tsx            # Home (RSC, hero + about + projects)
 │   ├── contact/
+│   ├── health/             # Body / mind / spirit (images + video in public/)
 │   ├── nest/
 │   ├── projects/
 │   ├── resume/
@@ -42,7 +45,7 @@ src/
 └── lib/
     └── metadata.ts         # Per-page Open Graph / Twitter helper
 
-public/                     # Static assets (images, favicon, manifest, resume PDF)
+public/                     # Static assets (images, videos/, favicon, manifest, resume PDF)
 next.config.mjs             # trailingSlash: true, image optimization, security headers
 ```
 
@@ -54,6 +57,7 @@ next.config.mjs             # trailingSlash: true, image optimization, security 
 | `/projects` | Project cards |
 | `/resume` | Resume PDF open/download (iframe on desktop) |
 | `/contact` | Contact links |
+| `/health` | Health — personal body / mind / spirit page (linked from the Health project card) |
 | `/nest` | NEST Run Club |
 | `/volunteering` | Volunteering & community |
 
@@ -64,7 +68,8 @@ URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 - **Server Components by default**; `'use client'` only for `NavBar` (pathname, mobile menu).
 - **Global chrome**: `NavBar` only (footer removed).
 - **Metadata**: `metadataBase` + shared OG image in layout; per-page metadata via `src/lib/metadata.ts`.
-- **Images**: `next/image` with optimized delivery; large originals in `public/`.
+- **Images**: `next/image` with optimized delivery (AVIF/WebP); large originals in `public/`. Next 16 deprecates `priority`: use `preload` only on a page's hero (LCP) image, `loading="eager"` for other above-the-fold images, and the default lazy loading elsewhere. Give every image alt text that describes the picture.
+- **Video**: encode H.264 with `-movflags +faststart` at about the displayed width (the /health clip is 480 px, ~1.2 MB), no audio track unless needed, with `poster`, `preload="none"`, `controls`, `playsInline` and an `aria-label`.
 
 ## Conventions for changes
 
@@ -76,13 +81,3 @@ URLs use **trailing slashes** (`trailingSlash: true` in `next.config.mjs`).
 ## ESLint
 
 Flat config in `eslint.config.mjs` — `eslint-config-next/core-web-vitals`; lints `src/**/*.ts(x)`.
-
-<!-- BEGIN:nextjs-agent-rules -->
-
-# This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
-
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
-
-<!-- END:nextjs-agent-rules -->

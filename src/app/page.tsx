@@ -17,7 +17,7 @@ export default function Home() {
           src="/images/nick/nicholas-personal-2.jpeg"
           alt="Nicholas Connelly"
           fill
-          priority
+          preload
           className="object-cover object-[center_25%] md:object-[center_30%] lg:object-[center_35%]"
           sizes="100vw"
         />
@@ -51,7 +51,7 @@ export default function Home() {
               Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I&apos;m pursuing studies toward becoming a certified Anesthesiology Assistant (CAA).
             </p>
             <p className="text-lg">
-              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and created a personal health and wellness site to share tools for preventing lifestyle-related chronic diseases. My commitment to health and community led me to create NEST Run Club which has led to a massive growth in students&apos; fitness and wellbeing at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
+              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and I share my personal approach to health through body, mind, and spirit. My commitment to health and community led me to create NEST Run Club which has led to a massive growth in students&apos; fitness and wellbeing at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
               Projects & Initiatives
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A collection of my work in health technology, community building, and global health initiatives.
+              A collection of my work in health, community building, and service.
             </p>
           </div>
 

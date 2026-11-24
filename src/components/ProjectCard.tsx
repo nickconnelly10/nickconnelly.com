@@ -68,7 +68,7 @@ export const projects = [
   {
     title: "Muscadine",
     description:
-      "Muscadine is a small business focused on Bitcoin, crypto security, and DeFi solutions, helping individuals navigate the digital economy.",
+      "Muscadine focuses on Bitcoin, crypto self-custody, and DeFi solutions.",
     imageSrc: "/images/muscadine/Bitcoin.svg.png",
     imageAlt: "Muscadine Platform",
     href: "https://muscadine.xyz",
@@ -76,19 +76,18 @@ export const projects = [
     external: true,
   },
   {
-    title: "Health & Wellness",
+    title: "Health",
     description:
-      "This site reflects my journey in health, medicine, and holistic living. I also have a collection of reliable resources and protocols I use for my own health and wellbeing.",
+      "My personal journey into body, mind, and spirit — nutrition, movement, learning, and faith.",
     imageSrc: "/images/health/health-wellness-platform.jpeg",
-    imageAlt: "Health Platform",
-    href: "https://health.nickconnelly.com",
-    cta: "View Platform →",
-    external: true,
+    imageAlt: "Runners with finisher medals after a race",
+    href: "/health",
+    cta: "Learn More →",
   },
   {
     title: "NEST Run Club",
     description:
-      "The NEST Run Club is a student-led community at the University of Georgia that brings people together through weekly runs, promoting both the physical benefits of exercise while fostering friendship, consistency, and growth.",
+      "A student-led running community at UGA built around weekly runs, friendship, and growth.",
     imageSrc: "/images/nest/nestrunclubgroupphoto.jpeg",
     imageAlt: "NEST Run Club",
     href: "/nest",
