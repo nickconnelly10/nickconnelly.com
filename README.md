@@ -26,8 +26,10 @@ No environment variables required.
 ```
 src/
 ├── app/              # Next.js App Router pages
-├── components/       # React UI components
-└── globals.css       # Global styles
+├── components/       # React UI components (NavBar, NavLinks, ProjectCard)
+└── lib/              # Metadata helper
+
+Global styles live in src/app/globals.css (Tailwind v4).
 public/               # Static assets
 ```
 

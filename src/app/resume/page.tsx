@@ -40,14 +40,14 @@ export default function ResumePage() {
               </div>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:pointer-fine:block">
             <iframe
               src={`${RESUME_URL}#toolbar=1&navpanes=1&scrollbar=1`}
               className="w-full h-screen border-0"
               title="Nicholas Connelly Resume"
             />
           </div>
-          <div className="md:hidden px-6 py-8 text-center text-gray-600 text-sm">
+          <div className="lg:pointer-fine:hidden px-6 py-8 text-center text-gray-600 text-sm">
             <p>Use the buttons above to open or download the PDF on mobile.</p>
           </div>
         </div>
