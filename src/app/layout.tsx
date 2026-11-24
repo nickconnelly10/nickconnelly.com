@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: ["/images/nick/og-image.jpg"],
     creator: "@nicklutk",
   },
-  keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Medical Student"],
+  keywords: ["DeFi", "Bitcoin", "Health", "Medicine", "Finance", "Crypto", "Pre-Health", "Anesthesiology Assistant"],
   authors: [{ name: "Nicholas Connelly" }],
   robots: "index, follow",
 };
