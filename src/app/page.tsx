@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import ProjectCard, { projects } from "../components/ProjectCard";
 import { pageMetadata } from "../lib/metadata";
 
@@ -35,44 +36,60 @@ export default function Home() {
         </div>
       </div>
 
-      <section id="about" className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto container-padding">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-light text-gray-800 leading-tight mb-8">
-              About Me
-            </h2>
-          </div>
+      <section id="about" className="bg-white py-10 md:py-12">
+        <div className="max-w-3xl mx-auto container-padding">
+          <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-light leading-tight text-gray-900 md:text-xl">
+            About
+          </h2>
 
-          <div className="max-w-none text-gray-800 leading-relaxed space-y-6 animate-fade-in">
-            <p className="text-lg">
-              I&apos;m Nick Connelly, a fourth-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it&apos;s helping others navigate wellness, finances, and the human body, I find purpose to always question what&apos;s around us.
+          <div className="max-w-none space-y-4 leading-relaxed text-gray-700">
+            <p>
+              I&apos;m Nick Connelly, a fourth-year student at the University of Georgia studying Exercise and Sport Science. My passions lie at the crossroads of health, finance, and philosophy. Whether it&apos;s helping others navigate wellness, finances, and the human body, I find purpose in learning what&apos;s around us.
             </p>
-            <p className="text-lg">
-              Outside of academics, I spend time gardening, being outdoors, and reading—often drawing inspiration from the stoics and in my faith in Jesus. My long-term path is in the medical field, where I&apos;m pursuing studies toward becoming a certified Anesthesiology Assistant (CAA).
-            </p>
-            <p className="text-lg">
-              I founded Muscadine to help others navigate the emerging world of cryptography and decentralized finance, and I share my personal approach to health through body, mind, and spirit. My commitment to health and community led me to create NEST Run Club which has led to a massive growth in students&apos; fitness and wellbeing at UGA. At the core of everything I do is a simple value: helping others, while living in the nature of truth.
+            <p>
+              Outside of academics, I spend time gardening, being outdoors, and reading. My long-term path is in the medical field, where I&apos;m pursuing studies toward becoming a certified Anesthesiology Assistant (CAA).
             </p>
           </div>
         </div>
       </section>
 
-      <section id="projects" className="section-padding bg-gray-50">
-        <div className="max-w-6xl mx-auto container-padding">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-light text-gray-800 leading-tight mb-8">
-              Projects & Initiatives
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A collection of my work in health, community building, and service.
-            </p>
-          </div>
+      <section id="health" className="bg-white pb-10 md:pb-12">
+        <div className="max-w-3xl mx-auto container-padding">
+          <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-light leading-tight text-gray-900 md:text-xl">
+            <Link href="/health" className="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900">
+              Health
+            </Link>
+          </h2>
+          <p className="max-w-2xl leading-relaxed text-gray-700">
+            My personal journey into body, mind, and spirit.
+          </p>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-slide-up">
+      <section id="projects" className="bg-white pb-10 md:pb-12">
+        <div className="mx-auto max-w-3xl container-padding">
+          <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-light leading-tight text-gray-900 md:text-xl">
+            Projects
+          </h2>
+          <div className="divide-y divide-gray-200 border-b border-gray-200">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-gray-200 bg-white">
+        <div className="mx-auto max-w-6xl container-padding py-8 text-sm">
+          <div className="flex gap-8">
+            <Link href="/resume" className="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900">
+              Resume
+            </Link>
+            <Link href="/contact" className="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900">
+              Contact
+            </Link>
+          </div>
+          <p className="mt-4 text-xs text-gray-500">© Nicholas Connelly</p>
         </div>
       </section>
     </div>
