@@ -4,12 +4,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://nickconnelly.com";
   return [
     "",
-    "/projects/",
     "/resume/",
     "/contact/",
     "/health/",
-    "/nest/",
-    "/volunteering/",
   ].map((path) => ({
     url: `${base}${path === "" ? "/" : path}`,
     lastModified: new Date("2026-11-23"),
