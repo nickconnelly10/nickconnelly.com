@@ -81,7 +81,7 @@ export const projects: Project[] = [
   {
     title: "NEST Run Club",
     description:
-      "Lead and recruited over 500 members on weekly morning runs, social gatherings, and community service events.",
+      "Led and recruited over 500 members on weekly morning runs, social gatherings, and community service events.",
     imageSrc: "/images/nest/nest-run-club-activity-2.jpeg",
     imageAlt: "NEST Run Club huddle",
   },
